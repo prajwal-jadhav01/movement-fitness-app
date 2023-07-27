@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"
+        content="Exercise GIFs, Workout GIFs, Fitness GIFs, Fitness information, Easy exercises, Health calculators, BMI calculator, Calorie calculator, BMR calculator,  Exercise database, , Weight loss calculator, Fitness community, Personalized workouts, Online fitness resource, Exercise videos, Home workouts, Body Mass Index calculator, Daily calorie calculator, Basal Metabolic Rate calculator,  Fitness for beginners, Fitness routines for all levels, Exercise at home " />
+    <meta name="description" content="Movement has the resources and tools to help you get the most out
+    of your workout routine. Search for exercise move GIFs and see
+    their effects with our helpful calculators. Save and add your
+    favorites to keep track of your progress. Get personalized tips for
+    feeling energized and motivated." />
+    <meta name="robots" content="index" />
+    <title>All Calculators</title>
+    <!-- <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> -->
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Cardo&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@800&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+
+
+        body {
+            background-color: #FFFAFB;
+            font-family: 'Josefin Sans';
+            margin: 0;
+            padding: 20px;
+        }
+
+        .categories__container {
+            margin: 0 auto;
+            padding: 1.25rem 1rem;
+        }
+
+
+        .categories__suptitle {
+            font-size: 1rem;
+            line-height: 1.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            text-align: center;
+            color: red;
+        }
+
+        .categories__title {
+            font-size: 1.875rem;
+            line-height: 2.25rem;
+            color: #111827;
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 1.25rem;
+        }
+
+
+        .categories__description {
+            font-size: 1.25rem;
+            line-height: 1.75rem;
+            color: black;
+            text-align: center;
+            max-width: 813px;
+            margin: 0 auto 3rem;
+        }
+
+        .categories__grid {
+            position: relative;
+            left: 1.6%;
+            display: flex;
+            gap: 5rem;
+            width: 97%;
+        }
+
+
+
+
+        .categories__title {
+            color: black;
+        }
+
+        .categories__description {
+            color: black;
+        }
+
+        .category {
+            padding-top: 1.5rem;
+            position: relative;
+            width: 100%;
+            height: 47vh;
+            text-decoration: none;
+            border-radius: 6px;
+            border-bottom: 4px solid #7432dd;
+            transform: scale(1, 1);
+            transition: 0.2s all ease-in-out;
+        }
+
+        .category:hover {
+            transform: scale(1.1, 1.1);
+        }
+
+        .category__icon {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+            position: absolute;
+            width: 48px;
+            height: 48px;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 8px;
+        }
+
+        .category__info {
+            padding: 3.5rem 1.5rem 2rem;
+            border-radius: 8px;
+            background: white;
+            width: 100%;
+            height: 100%;
+        }
+
+        .category__title {
+            font-size: 1.5rem;
+            line-height: 1.75rem;
+            text-align: center;
+            color: black;
+            margin-bottom: 1.25rem;
+            font-family: 'Kumbh Sans', sans-serif;
+        }
+
+        .category__description {
+            font-size: 1.4rem;
+            line-height: 2rem;
+            color: black;
+            text-align: center;
+            font-family: 'Nunito Sans', sans-serif;
+        }
+
+        .category__info {
+            background: white;
+        }
+    </style>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <ul>
+            <li><img src="./images/logo.png" alt="logo" class="logo"></li>
+            <li style="margin-left: -38px;"><a href="home.html" class="home">Home</a></li>
+            <li><a href="home.html" class="home" id="ex">Exercise</a></li>
+            <li><a href="calculators.html" class="home" id="ex">Health Calculators</a></li>
+            <a href="favorites.html" class="home" id="ex">Go to Favorites</a>
+        </ul>
+    </div>
+
+    <section class="categories">
+        <div class="container categories__container">
+            <h3 class="categories__suptitle">3 Calculators</h3>
+            <h1 class="categories__title">Health &amp; Fitness Calculators</h1>
+            <p class="categories__description">Planning and living a healthy lifestyle require honest calculations.
+                Input your current and desired body parameters to understand numbers such as body mass index (BMI),
+                ideal weight, calorie intake, and other health indicators. They will help you make informed nutrition,
+                fitness, and overall well-being decisions.</p>
+            <div class="categories__grid">
+                <a href="bmi.html" class="category">
+                    <img src="./images/bmi-icon.png" alt="BMI Calculator" class="category__icon">
+                    <div class="category__info">
+                        <h4 class="category__title">BMI Calculator</h4>
+                        <p class="category__description">The free Body Mass Index calculator, also known as BMI,
+                            computes and classifies BMI for children and adults using data obtained from WHO and CDC.
+                        </p>
+                    </div>
+                </a>
+                <a href="calorie.html" class="category">
+                    <img src="./images/calorie-icon.png" alt="Calorie Calculator" class="category__icon">
+                    <div class="category__info">
+                        <h4 class="category__title">Calorie Calculator</h4>
+                        <p class="category__description">This calorie calculator computes how many calories are required
+                            daily to maintain, decrease, or gain weight. Learn about the different types of calories and
+                            how they affect you.</p>
+                    </div>
+                </a>
+                <a href="bmr.html" class="category">
+                    <img src="./images/bmr-icon.png" alt="BMR Calculator" class="category__icon">
+                    <div class="category__info">
+                        <h4 class="category__title">BMR Calculator</h4>
+                        <p class="category__description">Free BMR calculator uses well-known algorithms to calculate the
+                            basal metabolic rate. Also, find out more about the factors that influence BMR.</p>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

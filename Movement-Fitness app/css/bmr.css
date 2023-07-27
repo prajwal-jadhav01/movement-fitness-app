@@ -1,0 +1,102 @@
+.bmr-calculator {
+    width: 685px;
+    font-family: "Roboto", sans-serif;
+    padding: 8px 24px;
+    box-shadow: 0 2px 26px -12px rgba(0, 0, 0, 0.3);
+        position: absolute;
+    top: 36%;
+    left: 31%;
+  }
+  
+  .bmr-calculator,
+  .bmr-calculator * {
+    box-sizing: border-box;
+  }
+  
+  .bmr-calculator h2 {
+    text-align: center;
+    background: #f90a0ab5;
+    color: #fff;
+    font-weight: 100;
+    margin: -8px -24px;
+    margin-bottom: 8px;
+    padding: 16px;
+    padding-right: 57px;
+  }
+  
+  .bmr-calculator form h3 {
+    font-size: 15px;
+    text-transform: uppercase;
+    margin: 16px 0 10px 0;
+  }
+  
+  .bmr-calculator form input[type="text"] {
+    width: 100%;
+    padding: 4px 16px;
+    font-size: 24px;
+    font-weight: bold;
+    border: 1px solid #d5dbdd;
+  }
+  
+  .bmr-calculator form input[type="text"].invalid {
+    border: 1px solid red;
+  }
+  
+  .bmr-calculator form {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  .bmr-calculator form #female {
+    margin-left: 20px;
+  }
+  
+  .bmr-calculator form .height,
+  .bmr-calculator form .weight {
+    position: relative;
+  }
+  
+  .bmr-calculator form .unit {
+    position: absolute;
+    right: 20px;
+    top: 50px;
+    color: #777;
+  }
+  
+  .bmr-calculator .result .calculate-btn {
+    padding: 8px 24px;
+    margin: 16px 0;
+    font-size: 18px;
+    font-weight: 100;
+    text-transform: uppercase;
+    border: none;
+    background: #f90a0ab5;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 32px;
+  }
+  
+  .bmr-calculator .result {
+    text-align: center;
+    color: #4e4e4e;
+    font-size: 18px;
+  }
+  
+  .bmr-calculator .result .calories {
+    color: green;
+    font-size: 38px;
+    font-weight: 900;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+  
+  .bmr-calculator .result .error-message {
+    color: red;
+    font-size: 14px;
+    display: none;
+  }
+  
+  .bmr-calculator .result .error-message.active {
+    display: block;
+  }

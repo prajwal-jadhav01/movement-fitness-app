@@ -1,0 +1,103 @@
+<!-- favorites.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Exercise GIFs, Workout GIFs, Fitness GIFs, Fitness information, Easy exercises, Health calculators, BMI calculator, Calorie calculator, BMR calculator,  Exercise database, , Weight loss calculator, Fitness community, Personalized workouts, Online fitness resource, Exercise videos, Home workouts, Body Mass Index calculator, Daily calorie calculator, Basal Metabolic Rate calculator,  Fitness for beginners, Fitness routines for all levels, Exercise at home " />
+<meta name="description" content="Movement has the resources and tools to help you get the most out
+of your workout routine. Search for exercise move GIFs and see
+their effects with our helpful calculators. Save and add your
+favorites to keep track of your progress. Get personalized tips for
+feeling energized and motivated." />
+<meta name="robots" content="index" />
+  <title>Favorite Exercises</title>
+  <style>
+    h1 {
+      text-align: center;
+    }
+
+    .fsect2{
+
+      font-size: 2.5rem;
+      font-weight: 700;
+
+      transform: translate(168px, -66px);
+    }
+
+    .fsect2:before {
+      content: '';
+      position: absolute;
+      width: 70px;
+      height: 4px;
+      right: 52.8%;
+      bottom: 0;
+      background: rgb(255, 32, 32);
+    }
+
+    #favorites-container{
+      display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+    }
+    .exercise-card:hover {
+  transform: translateY(-5px);
+}
+    .exercise-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+  margin: 17px;
+  box-shadow: 0px 5px 10px 0px rgb(237 225 225 / 50%);
+}
+
+/* styles.css */
+
+.remove-button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.remove-button:hover {
+  background-color: darkred;
+}
+
+/* Add additional styling as needed */
+
+
+  </style>
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <div class="navbar">
+    <ul>
+      <li><img src="./images/logo.png" alt="logo" class="logo"></li>
+      <li style="margin-left: -38px;"><a href="home.html" class="home">Home</a></li>
+      <li><a href="#search-section" class="home" id="ex">Exercise</a></li>
+      <li><a href="calculators.html" class="home" id="ex">Health Calculators</a></li>
+      <a href="favorites.html" class="home" id="ex">Go to Favorites</a>
+    </ul>
+  </div>
+  <div class="container">
+
+    <h1 class="sect1" id="ex-h1">Favorite Exercises</h1>
+    <h2 class="fsect2">Favorite Exercises</h2>
+  </div>
+
+  <div id="favorites-container"></div>
+  
+
+  <script src="js/favorites.js"></script>
+  <!-- <script src="script.js"></script> -->
+</body>
+
+</html>

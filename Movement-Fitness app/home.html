@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords"
+    content="Exercise GIFs, Workout GIFs, Fitness GIFs, Fitness information, Easy exercises, Health calculators, BMI calculator, Calorie calculator, BMR calculator,  Exercise database, , Weight loss calculator, Fitness community, Personalized workouts, Online fitness resource, Exercise videos, Home workouts, Body Mass Index calculator, Daily calorie calculator, Basal Metabolic Rate calculator,  Fitness for beginners, Fitness routines for all levels, Exercise at home " />
+  <meta name="description" content="Movement has the resources and tools to help you get the most out
+of your workout routine. Search for exercise move GIFs and see
+their effects with our helpful calculators. Save and add your
+favorites to keep track of your progress. Get personalized tips for
+feeling energized and motivated." />
+  <meta name="robots" content="index" />
+
+  <link rel="icon" href="./images/logo.png">
+
+  <title>Movement: Your Path to Growth and Transformation</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/61daa0b400.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <div class="navbar">
+    <ul>
+      <li><img src="./images/logo.png" alt="logo" class="logo"></li>
+      <li style="margin-left: -38px;"><a href="home.html" class="home">Home</a></li>
+      <li><a href="#search-section" class="home" id="ex" onclick="scroll()">Exercise</a></li>
+      <li><a href="calculators.html" class="home" id="ex">Health Calculators</a></li>
+      <a href="favorites.html" class="home" id="ex">Go to Favorites</a>
+    </ul>
+  </div>
+
+
+  <div class="hero-section">
+    <div class="left-side">
+
+      <h2>Fitness Club</h2>
+      <h1>Sweat, Smile</h1>
+      <h1 style="margin-top: 10px;">And Repeat</h1>
+      <p>Check out the most affective exercises personalized to you</p>
+      <button class="ex-btn" id="exer-btn" onclick="scroll();">Explore Exercises</button>
+    </div>
+    <div class="right-side">
+      <img src="./images/hero-img.png" alt="hero-img" class="hero-img">
+    </div>
+  </div>
+
+
+  <div class="search-section" id="search-section">
+
+    <h1>Awesome Exercises You <br> Should Know</h1>
+    <div class="search-area">
+
+      <input type="text" placeholder="Search Exercises" class="input-box" id="exercise-search">
+      <button class="search-btn" id="search-button">Search</button>
+    </div>
+  </div>
+
+
+  <div class="search-container">
+    <!-- <input type="text" id="exercise-search" placeholder="Search exercises...">
+    <button id="search-button">Search</button> -->
+  </div>
+
+
+
+  <div class="arrows">
+    <div class="left-arrow arrow-btn"></div>
+    <div class="right-arrow arrow-btn"></div>
+  </div>
+
+  <div class="container">
+
+    <h1 class="sect1" id="ex-h1">Exercises</h1>
+    <h2 class="sect2">Exercises</h2>
+  </div>
+
+  <div class="exercise-types-container">
+    <div class="exercise-types-slider">
+      <div class="exercise-types">
+
+      </div>
+    </div>
+    <div class="slider-arrows">
+      <div class="slider-arrow prev-arrow"><img src="./images/arrow-left.png" alt="left-arrow"></div>
+      <div class="slider-arrow next-arrow"><img src="./images/arrow-right.png" alt="right-arrow"></div>
+    </div>
+  </div>
+
+
+  <div id="exercise-types"></div>
+  <div id="exercise-container"></div>
+  <div class="exercise-gifs">
+    <!-- Exercise GIFs will be dynamically added here -->
+  </div>
+
+
+
+  <!-- <div id="pagination-container"></div> -->
+  <div class="pagination">
+    <a href="#" class="prev-button">Previous</a>
+    <span class="page-numbers"></span>
+    <a href="#" class="next-button">Next</a>
+  </div>
+
+
+  <!--  Footer  -->
+  <div class="footer-body">
+    <footer>
+      <div class="footer-content">
+
+        <div class="footer-logo">
+          <img src="images/logo.png" alt="Movement logo">
+      </div>
+      <div class="name">Movement</div>
+      <div class="made-with-love">Made with ❤️ by Prajwal Jadhav</div>
+      <div>
+        <!-- Font Awesome GitHub icon -->
+        <a href="https://github.com/prajwal-jadhav01" target="_blank">
+          <i class="fa-brands fa-github icon" style="color: #000000;"></i>
+        </a>
+        <!-- Font Awesome LinkedIn icon -->
+        <a href="https://www.linkedin.com/in/prajwal-jadhav-3ab508257/" target="_blank">
+          <i class="fa-brands fa-linkedin icon" style="color: #1973b8;"></i>
+        </a>
+      </div>
+    </div>
+    </footer>
+  </div>
+
+
+  <script>
+    // Get the "Explore Exercises" button element
+    const exploreExercisesButton = document.querySelector(".ex-btn");
+
+    // Add event listener to scroll to the search section when clicked
+    exploreExercisesButton.addEventListener("click", () => {
+      const searchSection = document.getElementById("search-section");
+      searchSection.scrollIntoView({ behavior: "smooth" });
+    });
+
+  </script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
